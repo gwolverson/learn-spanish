@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { useRegisterSW } from 'virtual:pwa-register/svelte'
 	const {
 		needRefresh,
@@ -72,4 +72,4 @@
 		border-radius: 2px;
 		padding: 3px 10px;
 	}
-</style>
+</style> -->
