@@ -3,7 +3,7 @@ import { SvelteKitPWA } from '@vite-pwa/sveltekit'
 import { defineConfig } from 'vitest/config';
 
 /** @type {import('vite').UserConfig} */
-const config = defineConfig({
+export default defineConfig({
 	plugins: [
 		sveltekit(),
 		SvelteKitPWA({})
@@ -12,5 +12,3 @@ const config = defineConfig({
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
 });
-
-export default config
