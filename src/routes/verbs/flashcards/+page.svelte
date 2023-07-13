@@ -1,7 +1,6 @@
 <script>
-	import { Heading, Card, Button, P, Checkbox, Range, Label, Alert } from 'flowbite-svelte';
+	import { Heading, Button, P, Checkbox, Range, Label, Alert } from 'flowbite-svelte';
   import { get } from 'svelte/store';
-  import Sidebar from "../components/Sidebar.svelte";
 
   import { regularArVerbStore, irregularArVerbStore } from '../stores/arVerbStores';
   import { regularErVerbStore, irregularErVerbStore } from '../stores/erVerbStores';
@@ -73,10 +72,7 @@
 
 <div>  
   <div class="grid md:grid-cols-6 gap-6">
-    <div class="col-span-1">
-      <Sidebar />
-    </div>  
-    <div class="col-span-5">
+    <div class="col-span-6">
       <Heading tag="h1" class="mb-4 text-center" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl">Flashcards</Heading>                      
       <div class="px-10">
         <h2 class="m-auto pb-5 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Generate flashcards based on the content you want to focus on</h2>

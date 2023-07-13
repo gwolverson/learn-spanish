@@ -1,15 +1,12 @@
 <script>
-	import { Heading } from 'flowbite-svelte';
-	import Sidebar from "../components/Sidebar.svelte";
+	import Heading from "../../../components/common/Heading.svelte";
+
+	
 </script>
 
 <div>  
-  <div class="grid md:grid-cols-6 gap-2">
-    <div class="col-span-1">
-      <Sidebar />
-    </div>  
-    <div class="col-span-5">
-      <Heading tag="h1" class="mb-4 text-center" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl">Preterite</Heading>
-    </div>
-  </div>
+  <Heading 
+    title="Preterite Verbs"
+    subTitle="Below are some of the most common Spanish verbs, those that end in -ar, -er and -ir. Some are regular, whereas others are irregular."
+  />
 </div>

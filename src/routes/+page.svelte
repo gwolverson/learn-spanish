@@ -5,7 +5,7 @@ import Heading  from '../components/common/Heading.svelte';
 <div>
     <Heading 
         title="¡Hola y bienvenido!"
-        subTitle="Hello and welcome! This app is designed to help you learn the language Spanish, by providing a variety of resources!."
+        subTitle="Hello and welcome! This app is designed as a tool to help you learn Spanish, by providing a variety of resources!"
     />
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         <Card 

@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode } from 'flowbite-svelte';
+    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Dropdown, DropdownItem, Chevron, DarkMode } from 'flowbite-svelte';
     import { page } from '$app/stores';
     $: currentRoute = $page.url.pathname;    
   </script>
@@ -27,9 +27,23 @@
       <NavHamburger on:click={toggle} class1="w-full md:flex md:w-auto md:order-1"/>
     </div>
     <NavUl {hidden}>
-      <NavLi href="/" active={currentRoute == '/'}>Home</NavLi>
-      <NavLi href="/verbs" active={currentRoute.includes('/verbs')}>Verbs</NavLi>          
+      <NavLi href="/" active={currentRoute == '/'}>Home</NavLi>      
+      <NavLi id="verbs" active={currentRoute.includes('/verbs')} class="cursor-pointer"><Chevron aligned>Verbs</Chevron></NavLi>
+      <NavLi id="tips-and-tricks" active={currentRoute == '/tips-and-tricks'}><Chevron aligned>Tips & Tricks</Chevron></NavLi>          
       <NavLi href="/connectives" active={currentRoute == '/connectives'}>Connectives</NavLi>          
-      <NavLi href="/quiz" active={currentRoute == '/quiz'}>Quiz</NavLi>          
+      <NavLi href="/quiz" active={currentRoute == '/quiz'}>Quiz</NavLi>  
+      <Dropdown triggeredBy="#verbs" class="w-44 z-20">
+        <DropdownItem href="/verbs/basic">Basic</DropdownItem>
+        <DropdownItem href="/verbs/irregular">Irregular</DropdownItem>
+        <DropdownItem href="/verbs/preterite">Preterite</DropdownItem>        
+        <DropdownItem href="/verbs/flashcards">Flashcards</DropdownItem>
+      </Dropdown>
+      <Dropdown triggeredBy="#tips-and-tricks" class="w-44 z-20">
+        <DropdownItem href="/tips-and-tricks/tion-cion">tion-cion</DropdownItem>        
+        <DropdownItem href="/tips-and-tricks/ary-ario">ary-ario</DropdownItem>
+        <DropdownItem href="/tips-and-tricks/ic-ico">ic-ico</DropdownItem>        
+        <DropdownItem href="/tips-and-tricks/ous-oso">ous-oso</DropdownItem>        
+        <DropdownItem href="/tips-and-tricks/ct-cto">ct-cto</DropdownItem>        
+      </Dropdown>        
     </NavUl>
   </Navbar>
