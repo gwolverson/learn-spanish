@@ -1,6 +1,5 @@
 <script>
 	import { Heading } from 'flowbite-svelte';
-	import Sidebar from "../components/Sidebar.svelte";
 </script>
 
 <div>  

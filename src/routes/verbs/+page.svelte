@@ -1,6 +1,5 @@
 <script>
 	import Heading from "../../components/common/Heading.svelte";
-	import Sidebar from "./components/Sidebar.svelte";
 </script>
 
 <div>  
