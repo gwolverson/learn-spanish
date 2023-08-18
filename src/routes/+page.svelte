@@ -14,13 +14,18 @@ import Heading  from '../components/common/Heading.svelte';
             link="/verbs"                        
         />
         <Card 
-            title="Connectives"
-            content="Learn more about Spanish connecting words and how to use them!"
-            link="/connectives" 
+            title="Tips & Tricks"
+            content="Learn some useful tips & tricks for improving your Spanish vocabulary!"
+            link="/tips-and-tricks/tion-cion" 
+        />
+        <Card 
+            title="Cheatsheets"
+            content="Cheatsheets to expand your Spanish vocabulary!"
+            link="/cheatsheet/basics-one" 
         />
         <Card 
             title="Quiz"
-            content="Create randomly generates quizes to test and improve your knowledge!"
+            content="Create randomly generated quizes to test and improve your knowledge!"
             link="/quiz" 
             linkText="Quiz time!"
         />

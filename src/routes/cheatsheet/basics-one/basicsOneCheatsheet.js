@@ -1,0 +1,128 @@
+import { readable } from 'svelte/store';
+
+export const basicsOneCheatsheet = readable({
+  numbers: {
+    id: 1,    
+    english: "Numbers",
+    spanish: "Numeros",
+    words: [
+      ["One", "Uno"],
+      ["Two", "Dos"],
+      ["Three", "Tres"],
+      ["Four", "Cuatro"],
+      ["Five", "Cinco"],
+      ["Six", "Sies"],
+      ["Seven", "Siete"],
+      ["Eight", "Ocho"],
+      ["Nine", "Nueve"],
+      ["Ten", "Diez"],
+      ["Twenty", "Veinte"],
+      ["Thirty", "Treinta"],
+      ["Forty", "Cuarenta"],
+      ["Fifty", "Cincuenta"],
+      ["Sixty", "Sesenta"],
+      ["Seventy", "Setenta"],
+      ["Eighty", "Ochenta"],
+      ["Ninety", "Noventa"],
+      ["One Hundred", "Ciento"],
+      ["One Thousand", "Mil"],
+      ["One Million", "Un Millón"]
+    ]
+  },
+  colours: {
+    id: 2,
+    english: "Colours",
+    spanish: "Colores",
+    words: [
+      ["Blue", "Azul"],
+      ["Red", "Rojo"],
+      ["Yellow", "Amarillo"],
+      ["Green", "Verde"],
+      ["Purple", "Violeta"],
+      ["Black", "Negro"],
+      ["White", "Blanco"],
+      ["Orange", "Naranja"],
+      ["Pink", "Rosa"], 
+    ]
+  },
+  greetings: {
+    id: 3,
+    english: "Greetings",
+    spanish: "Saludos",
+    words: [
+      ["Hello", "Hola"],
+      ["Goodbye", "Adiós"],
+      ["Good Morning", "Buenos Días"],
+      ["Good Afternoon", "Buenas Tardes"],
+      ["Good Evening / Night", "Buenas Noches"],
+      ["Nice to meet you", "Mucho Gusto"],
+      ["Please", "Por Favor"],
+      ["Thank You", "Gracias"],
+      ["You're Welcome", "De Nada"],
+      ["I'm Sorry", "Lo Siento"],
+      ["I don't Know", "No Sé"],
+      ["Pardon", "Perdón"],
+      ["Excuse Me", "Disculpe"],
+      ["Yes", "Sí"],
+      ["No", "No"],
+      ["Of Course", "Claro"],      
+    ]
+  },
+  questions: {
+    id: 4,
+    english: "Questions",
+    spanish: "Preguntas",
+    words: [
+      ["How are you?", "¿Cómo estás?"],   
+      ["What's up?", "¿Qué tal?"],   
+      ["How's it going?", "¿Cómo te va?"],   
+      ["What are you doing?", "¿Qué haces?"],   
+      ["What's happening?", "¿Qué pasa?"],   
+      ["What's your name?", "¿Cómo te llamas?"],   
+      ["Where are you from?", "¿De donde eres?"],   
+      ["Are you from here?", "¿Eres de aqui?"],   
+      ["How old are you?", "¿Cuantos años tienes?"],   
+      ["What do you do?", "¿A qué te dedicas?"],   
+      ["How do you say ...?", "¿Cómo se dice ...?"],   
+      ["How do you write ...?", "¿Cómo se escribe ...?"],   
+      ["What does ... mean?", "¿Qué significa ... ?"],   
+      ["Can you repeat that please?", "¿Puedes repetir, por favor?"],   
+      ["Can you help me?", "¿Me puedes ayudar?"],  
+      ["Everything ok?", "¿Todo bien?"],   
+      ["Are you ready?", "¿Estás listo?"],   
+    ]
+  },
+  adjectives: {
+    id: 5,
+    english: "Adjectives",
+    spanish: "Adjetivos",
+    words: [
+      ["Good", "Bien"],      
+      ["Very Good", "Muy Bien"],      
+      ["Bad", "Mal"],      
+      ["Easy", "Facil"],      
+      ["Hard", "Difícil"],      
+      ["Possibly", "Posiblemente"],      
+      ["Probably", "Probablemente"],      
+      ["More or Less", "Más o Menos"],      
+      ["Fast or Slow", "Rápida o Lenta"],      
+    ]
+  },
+  feelings: {
+    id: 6,
+    english: "Feelings",
+    spanish: "Sentimientos",
+    words: [
+      ["Happy", "Feliz / (El) Contento / (La) Contenta"],
+      ["Sad", "Triste"],
+      ["Unwell", "Mal"],
+      ["Tired", "(El) Cansado / (La) Cansada"],
+      ["Excited", "(El) Emocionado / (La) Emocionada"],
+      ["Angry", "(El) Enojado / (La) Enojada"],
+      ["Nervous", "(El) Nervioso / (La) Nerviosa"],
+      ["Busy", "(El) Ocupado / (La) Ocupada"],
+      ["Calm", "(El) Tranquilo / (La) Tranquila"],
+      ["Scared", "Miedo / (El) Asustado / (La) Asustada"],
+    ]
+  }
+});

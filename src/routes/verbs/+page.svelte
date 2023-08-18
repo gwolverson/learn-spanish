@@ -5,9 +5,6 @@
 
 <div>  
   <div class="grid md:grid-cols-6 gap-2">
-    <!-- <div class="col-span-1 md">
-      <Sidebar />
-    </div>   -->
     <div class="col-span-6">
       <Heading 
         title="Learn Spanish Verbs"

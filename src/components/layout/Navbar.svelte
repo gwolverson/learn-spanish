@@ -30,12 +30,13 @@
       <NavLi href="/" active={currentRoute == '/'}>Home</NavLi>      
       <NavLi id="verbs" active={currentRoute.includes('/verbs')} class="cursor-pointer"><Chevron aligned>Verbs</Chevron></NavLi>
       <NavLi id="tips-and-tricks" active={currentRoute == '/tips-and-tricks'}><Chevron aligned>Tips & Tricks</Chevron></NavLi>          
-      <NavLi href="/connectives" active={currentRoute == '/connectives'}>Connectives</NavLi>          
+      <NavLi id="cheatsheet" active={currentRoute == '/cheatsheet'}><Chevron aligned>Cheatsheets</Chevron></NavLi>          
+      <!-- <NavLi href="/connectives" active={currentRoute == '/connectives'}>Connectives</NavLi>           -->
       <NavLi href="/quiz" active={currentRoute == '/quiz'}>Quiz</NavLi>  
       <Dropdown triggeredBy="#verbs" class="w-44 z-20">
         <DropdownItem href="/verbs/basic">Basic</DropdownItem>
-        <DropdownItem href="/verbs/irregular">Irregular</DropdownItem>
-        <DropdownItem href="/verbs/preterite">Preterite</DropdownItem>        
+        <!-- <DropdownItem href="/verbs/irregular">Irregular</DropdownItem> -->
+        <!-- <DropdownItem href="/verbs/preterite">Preterite</DropdownItem>         -->
         <DropdownItem href="/verbs/flashcards">Flashcards</DropdownItem>
       </Dropdown>
       <Dropdown triggeredBy="#tips-and-tricks" class="w-44 z-20">
@@ -44,6 +45,15 @@
         <DropdownItem href="/tips-and-tricks/ic-ico">ic-ico</DropdownItem>        
         <DropdownItem href="/tips-and-tricks/ous-oso">ous-oso</DropdownItem>        
         <DropdownItem href="/tips-and-tricks/ct-cto">ct-cto</DropdownItem>        
+      </Dropdown> 
+      <Dropdown triggeredBy="#cheatsheet" class="w-44 z-20">
+        <DropdownItem href="/cheatsheet/basics-one">Basics One</DropdownItem>                
+        <DropdownItem href="/cheatsheet/basics-two">Basics Two</DropdownItem>    
+        <DropdownItem href="/cheatsheet/time-and-direction">Time & Direction</DropdownItem>                
+        <DropdownItem href="/cheatsheet/travel">Travel</DropdownItem>                
+        <DropdownItem href="/cheatsheet/family-and-people">Family & People</DropdownItem>
+        <DropdownItem href="/cheatsheet/weather">Weather</DropdownItem>
+        <DropdownItem href="/cheatsheet/grammar">Grammar</DropdownItem>
       </Dropdown>        
     </NavUl>
   </Navbar>
