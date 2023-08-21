@@ -36,9 +36,14 @@
       <Dropdown triggeredBy="#verbs" class="w-44 z-20">
         <DropdownItem href="/verbs/basic">Basic</DropdownItem>
         <!-- <DropdownItem href="/verbs/irregular">Irregular</DropdownItem> -->
-        <!-- <DropdownItem href="/verbs/preterite">Preterite</DropdownItem>         -->
+        <DropdownItem href="/verbs/past-tense/preterite">Preterite</DropdownItem>        
+        <DropdownItem href="/verbs/past-tense/imperfect">Imperfect</DropdownItem>        
         <DropdownItem href="/verbs/flashcards">Flashcards</DropdownItem>
-      </Dropdown>
+      </Dropdown> 
+      <Dropdown triggeredBy="#cheatsheet" class="w-44 z-20">
+        <DropdownItem href="/past-tense/imperfect">Imperfect</DropdownItem>                
+        <DropdownItem href="/past-tense/preterite">Preterite</DropdownItem>
+      </Dropdown>   
       <Dropdown triggeredBy="#tips-and-tricks" class="w-44 z-20">
         <DropdownItem href="/tips-and-tricks/tion-cion">tion-cion</DropdownItem>        
         <DropdownItem href="/tips-and-tricks/ary-ario">ary-ario</DropdownItem>

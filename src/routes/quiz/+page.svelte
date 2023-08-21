@@ -58,7 +58,7 @@
     answerSubmitted = true;
   }
 
-  function handleNext() {
+  function handleNext() {    
     if (questionNumber >= generatedQuestions.length - 1) {        
       showEndQuizModal = true;
     } else if (answerIsCorrect) {
