@@ -11,7 +11,7 @@ import Heading  from '../components/common/Heading.svelte';
         <Card 
             title="Verbs"
             content="Learn more about Spanish verbs, conjugation, when and how to use them!"
-            link="/verbs"                        
+            link="/verbs/basic"                        
         />
         <Card 
             title="Tips & Tricks"
